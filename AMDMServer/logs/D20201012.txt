@@ -1,0 +1,37 @@
+[AMServer 2020-10-12 22:16:02] º≠πˆ ª˝º∫øœ∑·. ¥Î±‚¡ﬂ¿‘¥œ¥Ÿ.
+[AMServer 2020-10-12 22:17:25] º≠πˆ ª˝º∫øœ∑·. ¥Î±‚¡ﬂ¿‘¥œ¥Ÿ.
+[AMServer 2020-10-12 22:18:57] º≠πˆ ª˝º∫øœ∑·. ¥Î±‚¡ﬂ¿‘¥œ¥Ÿ.
+[AMServer 2020-10-12 22:20:44] º≠πˆ ª˝º∫øœ∑·. ¥Î±‚¡ﬂ¿‘¥œ¥Ÿ.
+[AMServer 2020-10-12 22:20:46] ('127.0.0.1', 54989)ø°º≠ ¡¢º”«‘
+[AMServer 2020-10-12 22:20:46] Android Data {"Type": "Android","RequestType": 2,"ID": 1,"IoTID": 1,"Lock": 1,"Time": "2020-10-04 13:49:12"}
+[AMServer 2020-10-12 22:20:46] Android µ•¿Ã≈Õ ¿¸º€ ø‰√ª
+[AMServer 2020-10-12 22:20:46] IoT Data {"Type": "Android","RequestType": 2,"ID": 1,"IoTID": 1,"Lock": 1,"Time": "2020-10-04 13:49:12"}
+[AMServer 2020-10-12 22:20:46] requestAndroidSQL øœ∑·(AdminID : 1,IoTID : 1Lock : 1)
+[AMServer 2020-10-12 22:21:33] º≠πˆ ª˝º∫øœ∑·. ¥Î±‚¡ﬂ¿‘¥œ¥Ÿ.
+[AMServer 2020-10-12 22:21:35] ('127.0.0.1', 55001)ø°º≠ ¡¢º”«‘
+[AMServer 2020-10-12 22:21:35] Android Data {"Type": "Android","RequestType": 2,"ID": 1,"IoTID": 1,"Lock": 1,"Time": "2020-10-04 13:49:12"}
+[AMServer 2020-10-12 22:21:35] Android µ•¿Ã≈Õ ¿¸º€ ø‰√ª
+[AMServer 2020-10-12 22:21:35] IoT Data {"Type": "Android","RequestType": 2,"ID": 1,"IoTID": 1,"Lock": 1,"Time": "2020-10-04 13:49:12"}
+[AMServer 2020-10-12 22:21:35] requestAndroidSQL øœ∑·(AdminID : 1,IoTID : 1Lock : 1)
+[AMServer 2020-10-12 22:21:52] ('127.0.0.1', 55006)ø°º≠ ¡¢º”«‘
+[AMServer 2020-10-12 22:21:52] Android Data {"Type": "Android","RequestType": 2,"ID": 1,"IoTID": 1,"Lock": 1,"Time": "2020-10-04 13:49:12"}
+[AMServer 2020-10-12 22:21:52] Android µ•¿Ã≈Õ ¿¸º€ ø‰√ª
+[AMServer 2020-10-12 22:21:52] IoT Data {"Type": "Android","RequestType": 2,"ID": 1,"IoTID": 1,"Lock": 1,"Time": "2020-10-04 13:49:12"}
+[AMServer 2020-10-12 22:21:52] requestAndroidSQL øœ∑·(AdminID : 1,IoTID : 1Lock : 1)
+[AMServer 2020-10-12 22:24:00] º≠πˆ ª˝º∫øœ∑·. ¥Î±‚¡ﬂ¿‘¥œ¥Ÿ.
+[AMServer 2020-10-12 22:24:03] ('127.0.0.1', 55037)ø°º≠ ¡¢º”«‘
+[AMServer 2020-10-12 22:24:03] Android Data {"Type": "Android","RequestType": 2,"ID": 1,"IoTID": 1,"Lock": 1,"Time": "2020-10-04 13:49:12"}
+[AMServer 2020-10-12 22:24:03] Android µ•¿Ã≈Õ ¿¸º€ ø‰√ª
+[AMServer 2020-10-12 22:24:03] IoT Data {"Type": "Android","RequestType": 2,"ID": 1,"IoTID": 1,"Lock": 1,"Time": "2020-10-04 13:49:12"}
+[AMServer 2020-10-12 22:24:03] requestAndroidSQL øœ∑·(AdminID : 1,IoTID : 1Lock : 1)
+[AMServer 2020-10-12 22:24:03] ('127.0.0.1', 55038)ø°º≠ ¡¢º”«‘
+[AMServer 2020-10-12 22:24:03] Android Data {"Type": "Android","RequestType": 2,"ID": 1,"IoTID": 1,"Lock": 1,"Time": "2020-10-04 13:49:12"}
+[AMServer 2020-10-12 22:24:03] Android µ•¿Ã≈Õ ¿¸º€ ø‰√ª
+[AMServer 2020-10-12 22:24:03] IoT Data {"Type": "Android","RequestType": 2,"ID": 1,"IoTID": 1,"Lock": 1,"Time": "2020-10-04 13:49:12"}
+[AMServer 2020-10-12 22:24:03] requestAndroidSQL øœ∑·(AdminID : 1,IoTID : 1Lock : 1)
+[AMServer 2020-10-12 13:36:21] ÏÑúÎ≤Ñ ÏÉùÏÑ±ÏôÑÎ£å. ÎåÄÍ∏∞Ï§ëÏûÖÎãàÎã§.
+[AMServer 2020-10-12 13:36:57] ('127.0.0.1', 44630)ÏóêÏÑú Ï†ëÏÜçÌï®
+[AMServer 2020-10-12 13:36:57] Android Data {"Type": "Android","RequestType": 2,"ID": 1,"IoTID": 1,"Lock": 1,"Time": "2020-10-04 13:49:12"}
+[AMServer 2020-10-12 13:36:57] Android Îç∞Ïù¥ÌÑ∞ Ï†ÑÏÜ° ÏöîÏ≤≠
+[AMServer 2020-10-12 13:36:57] IoT Data {"Type": "Android","RequestType": 2,"ID": 1,"IoTID": 1,"Lock": 1,"Time": "2020-10-04 13:49:12"}
+[AMServer 2020-10-12 13:36:57] requestAndroidSQL ÏôÑÎ£å(AdminID : 1,IoTID : 1Lock : 1)

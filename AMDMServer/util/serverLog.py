@@ -1,10 +1,14 @@
 from util.ServerTime import *
 
-logdirectory = "/home/codespace/workspace/AMDMServer/logs/"
 
 logDefaultName = "D"+serverlogFile()+".txt"
 logErrorName = "E"+serverlogFile()+".txt"
 logWarningName = "W"+serverlogFile()+".txt"
+
+logdirectory=""
+def setLogDirectory(str):
+    logdirectory=str
+    
 
 #평상시 로그
 def LogD(message):

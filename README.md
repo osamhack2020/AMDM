@@ -1,50 +1,95 @@
-# AMDM
-💙 ☁️ 👍 🔥 🙌ㅠㅠㅠ
+## AMDM(Army Mobile Device Management)
+저희는 RFID 기술을 이용한 IoT 장치와 휴대전화를 통제하는 APP을 개발하여 군에서의 보안/안전적인 측면을 더욱 강화시키는 것 뿐만아니라 전군 장병들의 휴대폰 관리를 전산화 처리를 할려고 합니다.
+저희 팀은 국방 오픈소스 아카데미에 참가하여 국군 모바일 단말 장치 관리 시스템(Army Mobile Device Management System)을 구현시키고자 합니다. 🔥
 
-# IoT
-1. RFID 태그
-2. 보관함 문이 열림(모터 작동)
-3. 보관함 휴대폰 넣음
-4. 센서 확인 후 (5초,10초 사이) 
-5-1. (O) 문 닫힘
-5-2. (X)
-6. DB로 TCP 전송 
+### 로고
 
-- 보관함별로 어떤기기가 사용 될 건지(이건 관리자 용)
-- 최대한 비용감소 측면으로 발전 가능성 증가된다
+![Logo](https://raw.githubusercontent.com/yeonghokim/AMDM/main/logo/Logo_300x300.png)
 
-# Android
-### 화면 리스트
-* 로그인 전 메인페이지
-* 회원가입 페이지
-* 로그인 페이지
-* 병사 메인페이지
-  * 반납 페이지
-  * 통계 페이지
-* 간부 메인페이지
-* 관리자 메인페이지(많음)
+AMDM의 로고는 초승달과 자물쇠가 합쳐서 좋은 밤을 위해서는 보안을 잠그자 라는 뜻을 의미하고 있습니다.
 
+## 팀소개 및 프로젝트 설명 동영상 👍
+[![Watch the video](https://img.youtube.com/vi/LjX3eVQdIyk/0.jpg)](https://www.youtube.com/watch?time_continue=117&v=LjX3eVQdIyk)
 
+## 기능 설계
+ - [안드로이드 디자인](https://ovenapp.io/project/qREXQacVLW1qzBvL5xhXo0wNgUoqVt7W#ScIyR)
 
-# Server
-python으로 이루어진 TCP 소켓 서버입니다.
+## 구성 / 필수 조건 안내 (Prerequisites)
+* Android 6.0 (Marshmallow) 이상 
+* Python3.0 이상 필요
+* AMDMServer가 실행되어있어야 정상적으로 작동함
+
+## 기술 스택 (Technique Used)
+### Server(back-end)
+ - Python 3버전을 통해 개발
+ - TCP 소켓 통신 서버
+ - SQLite로 DB 구현
+
+### IoT
+
+### Android
+ - *Fragment*를 통하여 메인화면 구현
+ - *BroadCast Receiver*를 통해 안드로이드 켜질시 상태 구현
+ - chart 구현을 위해 [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)를 사용하여 구현
+
+## 설치 안내 (Installation Process) - 미완성
+
+### Android apk 실행
+* ${Git Home}/app-debug.apk
+
+### Python 서버 실행
+```bash
+$ python3 ${Git Home}/AMDMServer/server.py
+```
+
+### SQLite 실행(필요시)
+```bash
+$ sqlite3
+$ .open AMDMserver.sqlite3
+```
+
+## 프로젝트 사용법 (Getting Started) - 미완성
+1. [Android](https://github.com/yeonghokim/AMDM#android-1)
+2. [Server](https://github.com/yeonghokim/AMDM#server)
+3. [IoT장비와 데이터 교환](https://github.com/yeonghokim/AMDM#iot%EC%9E%A5%EB%B9%84-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B5%90%ED%99%98)
+4. [Android와 데이터 교환](https://github.com/yeonghokim/AMDM#android-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B5%90%ED%99%98)
+5. [DataBase(SQLite)](https://github.com/yeonghokim/AMDM#database-sqlite)
+
+## Android
+#### 화면 리스트
+* 스플래시 activity
+* 로그인 메인 activity
+* 로그인 activity
+* 회원가입 activity
+* 메인 activity
+    * 잠금 Fragment
+    * 통계 Fragment
+    * 설정 Fragment
+* TurnOn Activity
+
+## Server
+* Python3으로 이루어진 TCP 소켓 서버입니다.
+
+### 코드 소개
+1. logs 폴더
+    * 서버의 로그를 저장하는 폴더입니다. D로 시작하면 Default, W로 시작하면 Warning, E로 시작하면 Error를 뜻합니다.
+2. util 폴더
+    * 서버의 전반적인 유틸에 관한 코드입니다.
+    * DBManager.py는 SQLite와 연결하기 위한 코드입니다.
+    * jsonManager.py는 데이터와 Json 끼리 교환하기 위한 코드입니다.
+    * serverLog.py는 로그저장하는 코드입니다.
+    * ServerTime.py는 서버의 시간을 체크하는 코드입니다.
+
 ## IoT장비 데이터 교환
 ### 데이터 수신 형태 `IoT -> Server`
   * **Type** : 기기의 형태
   * **ID** : 기기의 아이디(초기 설정때 서버에서 지급)
-  * **Lock** : 현재 기기의 잠금 유무
-  * **PhoneLock** : 기기안의 핸드폰의 잠금 상태
+  * **Lock** : 현재 기기를 이 상태로 잠금 변경
 ```json
 {
         "Type": "IoT",
         "ID": 1234567,
         "Lock": 0,
-        "PhoneLock": {
-                "19-760730001": 0,
-                "19-760730002": 0,
-                "19-760730003": 1,
-                "19-760730004": 0
-        }
 }
 ```
 ### 데이터 송신 형태 `Server -> IoT` 
@@ -62,6 +107,7 @@ python으로 이루어진 TCP 소켓 서버입니다.
         }
 }
 ```
+
 ## Android 데이터 교환
 ### 데이터 수신 형태 Type1 `Android -> Server` 
   * **Type** : 기기의 형태
@@ -108,7 +154,9 @@ python으로 이루어진 TCP 소켓 서버입니다.
         "TurnOnTime": "2020-10-04 13:49:12"
 }
 ```
-# DataBase (SQLite)
+
+## DataBase (SQLite)
+
 ### User Table
 칼럼이름 | 타입 | 널 유무  | 외래키 유무
 -------- | -------- | ---------- | ----------
@@ -141,3 +189,12 @@ LOCKMANAGE_PR | INTEGER | PRIMARY
 PHONE_UNIQUENUM | INTEGER | X | PHONE.PHONE_PR
 MANAGETIME | DATETIME | X
 IS_LOCK | INTEGER | X
+
+## 팀 정보 (Team Information) 💙
+- 김영호 (yeongho.kim2000@gmail.com), Github Id: yeonghokim
+- 부규필 (@gmail.com), Github Id: Qfeel-Dev
+
+## 저작권 및 사용권 정보 (Copyleft / End User License) - 미완성
+ * [linechart](https://github.com/PhilJay/MPAndroidChart)
+ * [LockIcon](https://www.flaticon.com/free-icon/lock_3039495?term=lock&page=1&position=65)
+ * [MoonIcon](https://www.flaticon.com/free-icon/moon_1030337?term=moon&page=2&position=85)
