@@ -24,12 +24,15 @@ import com.chunma.amdm.mainfragment.MainStaticsFragment;
 
 public class MainActivity extends AppCompatActivity {
 
+
     MainLockFragment mainLockFragment = new MainLockFragment();
     MainSetupFragment mainSetupFragment = new MainSetupFragment();
     MainStaticsFragment mainStaticsFragment = new MainStaticsFragment();
 
     protected FragmentManager fragmentManager;
     protected FragmentTransaction transaction;
+
+    public LinearLayout loadingLayout;
 
     int nowPage=2;//main
     int changePage=0;
@@ -42,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     TextView mainText;
     TextView setupText;
 
-    MainActivity mainActivity;
+    static public MainActivity mainActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
         transaction.replace(R.id.fragmentmanager,mainLockFragment);
         transaction.commit();
 
+        loadingLayout=(LinearLayout)findViewById(R.id.main_loadinglayout);
+
         mainbutton=(ImageButton)findViewById(R.id.mainbutton);
         mainText=(TextView)findViewById(R.id.mainbuttontext);
 
@@ -68,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         mainText.setTextColor(ContextCompat.getColor(this.getApplicationContext(), R.color.mainNavigaionButtonTextSelect));
         mainbutton.setImageResource(R.drawable.night_mode_select);
 
-        //mainbutton.setTranslationY(-10.0f);
+        mainbutton.setTranslationY(-10.0f);
 
     }
 
@@ -102,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
     public void changeImage(int changepage){
         if(changepage==nowPage) return;
         changePage=changepage;
+
 
         new Thread(new Runnable() {
             @Override
