@@ -9,11 +9,12 @@
 <p align="center">AMDM의 로고는 초승달과 자물쇠가 합쳐서 좋은 밤을 위해서는 보안을 잠그자 라는 뜻을 의미하고 있습니다.</p>
 
 ## 팀소개 및 프로젝트 설명 동영상 👍
-[![Watch the video](https://img.youtube.com/vi/LjX3eVQdIyk/0.jpg)](https://www.youtube.com/watch?time_continue=117&v=LjX3eVQdIyk)
+[![AMDM 프로젝트 발표자료(최종본)_22](https://user-images.githubusercontent.com/71952165/97779919-a1fa2f80-1bc4-11eb-9d8d-1fddcd1b012c.png)](https://youtu.be/HRwMVqA-am0)
+
 
 ## 기능 설계
  - [안드로이드 디자인 Kakao Oven](https://ovenapp.io/project/qREXQacVLW1qzBvL5xhXo0wNgUoqVt7W#ScIyR)
-
+ - [아두이노 시뮬레이팅 Thinker CAD](https://www.tinkercad.com/things/cZuXuEFHrnm)
 ## 구성 / 필수 조건 안내 (Prerequisites)
 * Android 6.0 (Marshmallow) 이상 
 * 휴대폰 NFC, 인터넷 기능 필수
@@ -37,6 +38,16 @@
  - chart 구현을 위해 [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)를 사용하여 구현
  - Lock구현을 위해 Screen 없애질때마다 커스텀 액티비티로 대체함
  - TurnOnService 서비스 구현
+
+## 시스템 아키텍처 (System Architecture)
+![AMDM 프로젝트 발표자료(최종본)_7](https://user-images.githubusercontent.com/71952165/97780042-87748600-1bc5-11eb-86f2-4142215e727b.png)
+
+## 시스템 라이프사이클 (System LifeCycle)
+ ### 반납 사이클
+ ![AMDM 프로젝트 발표자료(최종본)_9](https://user-images.githubusercontent.com/71952165/97780081-c73b6d80-1bc5-11eb-9a8c-2f6a5620f3ce.png)
+ 
+ ### 불출 사이클
+![AMDM 프로젝트 발표자료(최종본)_8](https://user-images.githubusercontent.com/71952165/97780072-ba1e7e80-1bc5-11eb-83ff-be0d3e93e655.png)
 
 ## 설치 안내 (Installation Process)
 
@@ -110,4 +121,3 @@ $ .open AMDMserver.sqlite3
  * [linechart](https://github.com/PhilJay/MPAndroidChart)
  * [tcp](https://github.com/DDANGEUN/TCP_ClientSocket/tree/master)
  * [NFC](https://github.com/codexpedia/android_nfc_read_write)
-
